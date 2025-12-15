@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&display=swap');
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-contact: hsl(0, 0%, 20%);
+    --Grey-card: hsl(0, 0%, 12%);
+    --Grey-body: hsl(0, 0%, 8%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter", sans-serif;
+    background-color: var(--Grey-body);
+    min-width: 375px;
+    max-width: 1440px;
+}
+.page-wrapper{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.card{
+    width: 380px;
+    background-color: var(--Grey-card);
+    color: var(--White);
+    text-align: center;
+    border-radius: 10px;
+    padding: 35px;
+    font-size: 14px;
+    line-height: 150%;
+    
+}
+.card img{
+    width: 85px;
+    border-radius: 50%;
+}
+.card .name{
+    font-weight: 600;
+    font-size: 24px;
+    margin-top:25px;
+}
+.card .city{
+    font-weight: 700;
+    color: var(--Green);
+    padding: 10px 0;
+}
+.card .job{
+    color: hsla(0, 0%, 100%,0.7);
+    font-weight: 400;
+    padding:20px 0;
+}
+.card .contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contacts a{
+    text-decoration: none;
+    background-color: var(--Grey-contact);
+    border-radius: 5px;
+    color: var(--White);
+    font-weight: 700;
+    padding: 10px;
+    line-height: 1.2;
+}
+.contacts a:hover{
+    background-color: var(--Green);
+    color:var(--Grey-card);
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media (max-width: 375px){
+    .card{
+        width: 330px;
+    }
+}
+
